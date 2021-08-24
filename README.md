@@ -7,12 +7,12 @@
 - localstorage
 
 ## Backend
-`cd backend`
+`cd backend` <br />
 `node index.js`
 
 # env
 `REACT_APP_baseURL='http://localhost:3080/api/tasks/'`
 
 ## Frontend
-`cd frontend`
+`cd frontend` <br />
 `npm run start` or `yarn run start`
