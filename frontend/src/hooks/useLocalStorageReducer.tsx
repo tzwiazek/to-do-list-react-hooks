@@ -4,15 +4,7 @@ import { Action } from 'src/shared/types/todos-action';
 
 function useLocalStorageReducer(key: string, reducer: Reducer<ToDoInterface[], Action>, defaultValue: ToDoInterface[]): [ToDoInterface[], React.Dispatch<Action>] {
   const [state, dispatch]: [ToDoInterface[], React.Dispatch<Action>] = useReducer(reducer, defaultValue, () => {
-    let value: ToDoInterface[];
-    try {
-      value = JSON.parse(
-        window.localStorage.getItem(key) || String(defaultValue)
-      );
-    } catch {
-      value = defaultValue;
-    }
-    return value;
+    return JSON.parse(window.localStorage.getItem(key) || String(defaultValue)) || defaultValue;
   });
 
   useEffect(() => {
