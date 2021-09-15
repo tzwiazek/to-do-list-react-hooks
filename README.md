@@ -3,9 +3,9 @@
 - Node.js
 - MongoDB
 - Express
-- react hooks
 - useState
-- useContext + reducer (global store)
+- useContext
+- useReducer
 - memo
 - styled-components
 - localstorage
