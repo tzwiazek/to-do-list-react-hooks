@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "prepare-frontend":"cd frontend && npm install && npm run build",
-    "prepare-backend":"cd backend && npm install",
+    "prepare-frontend": "cd frontend && npm install && npm run build",
+    "prepare-backend": "cd backend && npm install",
     "heroku-postbuild": "npm run prepare-frontend && npm run prepare-backend",
     "start": "cd backend && npm start"
   }
