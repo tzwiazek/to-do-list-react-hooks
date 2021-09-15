@@ -3,11 +3,11 @@
 - Node.js
 - MongoDB
 - Express
-- useState
+- Typescript
 - useContext
 - useReducer
 - memo
-- styled-components
+- Styled-components
 - localstorage
 
 ## Backend
